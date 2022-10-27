@@ -1,5 +1,6 @@
 package com.my016.redisspringboot.Jedis;
 
+import com.my016.redisspringboot.util.JedisConnectionFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +14,7 @@ public class StartDemo1Test {
     @BeforeEach
     void setUp(){
         //建立连接
-        jedis = new Jedis("192.168.1.116",9810);
+        jedis = JedisConnectionFactory.getJedis();
         //设置密码
         jedis.auth("016016");
         //选择库
