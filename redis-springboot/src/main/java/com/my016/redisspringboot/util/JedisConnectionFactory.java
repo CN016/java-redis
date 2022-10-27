@@ -1,4 +1,4 @@
-package com.my016.redisspringboot.Jedis;
+package com.my016.redisspringboot.util;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
